@@ -1,8 +1,8 @@
 Под Redmi 4X существует огромное кол-во прошивок. Выбрал эту, т.к. её пилят не Васи Пупкины, а ребята из бывшего cyannogenmod. 
 
-Шаги следующие:
-1) разблокировка загрузчика
-2) установка свежего twrp: https://twrp.me/xiaomi/xiaomiredmi4x.html
-3) подготовка разделов в соотв с инструкцией https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-2017-08-07lineage-14-1-t3653016
-4) установка свежей прошивки https://download.lineageos.org/santoni
-5) установка gapps: https://opengapps.org/ (Arm64 Nano]
+Шаги следующие:<br>
+1) разблокировка загрузчика<br>
+2) установка свежего twrp: [https://twrp.me/xiaomi/xiaomiredmi4x.html]()<br>
+3) подготовка разделов в соотв с инструкцией [https://forum.xda-developers.com/xiaomi-redmi-4x/development/rom-2017-08-07lineage-14-1-t3653016]()<br>
+4) установка свежей прошивки [https://download.lineageos.org/santoni]()<br>
+5) установка gapps: https://opengapps.org/ (Arm64 Nano]<br>
