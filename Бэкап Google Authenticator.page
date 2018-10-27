@@ -1,0 +1,25 @@
+При переносе Google Authenticator на другую прошивку, либо телефон все сохранённые коды к приложениям слетают, что очень неудобно.
+
+Делаем бэкап и восстанавливаем базу следующим образом (необходим рут):
+
+```
+# adb pull /data/data/com.google.android.apps.authenticator2/databases/databases /Backup_GoogleA
+```
+
+Скорее всего файлик не найдётся потому что он под защитой SELinux. Поэтому сначала выполняем:
+
+```
+# restorecon -F /data/data/com.google.android.apps.authenticator2/databases/databases
+```
+
+А потом повторяем предыдущий шаг. 
+
+Не новом телефоне ставим Google Authenticator, предварительно копируем сохранённый ранее файлик databases например на sdcard, далее выполняем примерно следующее:
+
+```
+$ su
+# restorecon -F /data/data/com.google.android.apps.authenticator2/databases/databases
+# cp /sdcard/databases /data/data/com.google.android.apps.authenticator2/databases/databases
+```
+
+Всё, все доступы восстановлены.
